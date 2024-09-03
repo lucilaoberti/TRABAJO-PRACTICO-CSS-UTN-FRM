@@ -1,0 +1,153 @@
+header{
+    background-color:#A49393;
+    text-align: center;
+   
+}
+header h1 {
+        font-size: 30px;
+}
+body{
+    background-color: #f0f0f0;
+    margin: 0;
+    padding:0;
+    align-items: center;
+}
+section{
+    max-width: 80%;
+    margin: 40px auto ;
+    padding: 20px ;
+    background-color:#fff;
+    border:1px solid #ccc ;
+    border-radius: 5px;
+}
+h2{
+    border-bottom:1px solid #000 ;
+    padding-bottom: 10px;
+    margin-bottom 20px;
+    font-size:24px;
+}
+.parrafo{
+    font-size:16px;
+    line-height:1.6;
+    margin-bottom:20px;
+    text-align: justify; 
+    text-decoration: underline;
+}
+.cita {
+    font-style: italic;
+    color: #555;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+}
+.box{
+    padding: 15px;
+    margin:10px;
+    border: 1px solid #000;
+    border-radius:5px ;
+    box-shadow: 2px 2px 5px black;
+    background-color: #f9f9f9;
+   
+}
+
+.featuredbox{
+    padding: 15px;
+    margin: 10px; 
+    border-radius:4px ;
+    border: 5px solid black;
+    box-shadow: 2px 2px 5px black;
+    background-color: #ffe6b3;
+}
+.relative-box {
+    position: relative;
+    margin-bottom: 60px; /*Espacio inferior evita solapamientos */
+    background-color: #e0f7fa; /* Color de fondo para la caja relativa */
+    padding: 20px;
+    border: 1px solid #ccc; /* Borde de la caja relativa */
+  }
+
+  .absolute-box {
+    position: absolute;
+    top:70%;
+    left:40%;
+    background-color: #26a69a; /* Color de fondo para la caja absoluta */
+    color: white; /* Color de texto para la caja absoluta */
+    padding: 10px;
+    border-radius: 4px; /* Bordes redondeados */
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px; /* Espacio entre los elementos de la cuadrícula */
+    margin: 20px auto;
+    padding: 20 px ; 
+  }
+  
+  .grid-item  {
+    background-color: #8892f6;
+    border-radius: 8px;
+    text-align: center; 
+    color: white; 
+    font-weight: bold; 
+    padding: 20px;
+  }
+  
+
+  @media only screen and (max-width:768px){
+   body {
+    background-color: #E0CAE0;
+   }
+   header h1 {
+    font-size: 15px;
+   }
+   section{
+    width: 90%;
+    padding:10px ;
+    
+   }
+  } 
+
+
+.animacion {
+    width: 100px;
+    height: 100px;
+    border:none;
+    background-color: #3498db;
+    color:white;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease; /* Transición de color al hacer hover */
+}
+.animacion:hover{
+    cursor:pointer;
+    background-color: #d388f6;
+    color:black;
+    border:2px solid purple
+    
+}
+.mover {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+   animation: moveHorizontally 3s infinite linear;
+}
+
+/* Definición de la animación usando @keyframes */
+@keyframes moveHorizontally {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+footer{
+    text-align: center;
+    background-color: #A49393;
+    
+}
